@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data Chart</title>
+</head>
+<body>
+    <h1>Stock Data for {{ stock_symbol }}</h1>
+    <!-- Debugging information to see the path of the chart -->
+    <pre>{{ chart_data }}</pre>
+    <embed type="image/svg+xml" src="{{ chart_data }}" style='max-width:1000px'/>
+</body>
+</html>
